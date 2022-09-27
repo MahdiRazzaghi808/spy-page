@@ -235,7 +235,8 @@ function showCard(event) {
         color: "#fff",
         background: '#4F5D75',
         confirmButtonText: "باشه",
-        confirmButtonColor: "#DD6B55"
+        confirmButtonColor: "#DD6B55",
+        allowOutsideClick: false
     }).then(result => {
         
         if (remainingCard === 1 && result.isConfirmed) {
@@ -289,7 +290,7 @@ function timer(time) {
                 seconds > 9 ? remainingTime.innerText = `0${minutes} : ${seconds}` : remainingTime.innerText = `0${minutes} : 0${seconds}`
             }
         }
-    }, 10)
+    }, 1000)
 }
 
 
