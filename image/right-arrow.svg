@@ -1,0 +1,23 @@
+<svg id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <filter id="Path_5">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ef8354" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1" data-name="Group 1">
+    <path id="Path_3" data-name="Path 3" d="M27,53h0A26,26,0,0,1,1,27H1A26,26,0,0,1,27,1h0A26,26,0,0,1,53,27h0A26,26,0,0,1,27,53Z" fill="#4f5d75"/>
+    <path id="Path_4" data-name="Path 4" d="M27,54A27,27,0,1,1,54,27,27.03,27.03,0,0,1,27,54ZM27,2A25,25,0,1,0,52,27,25.028,25.028,0,0,0,27,2Z" fill="none"/>
+  </g>
+  <g data-type="innerShadowGroup">
+    <path id="Path_5-2" data-name="Path 5" d="M39,28H13a1,1,0,0,1,0-2H39a1,1,0,0,1,0,2Z" fill="#ef8354"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_5)">
+      <path id="Path_5-3" data-name="Path 5" d="M39,28H13a1,1,0,0,1,0-2H39a1,1,0,0,1,0,2Z" fill="#fff"/>
+    </g>
+  </g>
+  <path id="Path_6" data-name="Path 6" d="M30.707,37.707l-1.414-1.414L38.586,27l-9.293-9.293,1.414-1.414L41.414,27Z" fill="#ef8354"/>
+</svg>

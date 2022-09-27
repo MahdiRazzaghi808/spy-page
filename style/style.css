@@ -1,0 +1,316 @@
+/* :root {
+    --main-color: #691E06;
+    --button-bg-color: #BB4D00;
+    --text-color: #FBBA72;
+    --text-btn-color: #f9d4aa;
+} */
+
+:root {
+    --main-color: #2D3142;
+    --button-bg-color: #4F5D75;
+    --text-color: #EF8354;
+    --text-btn-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* background-color: #8F250C */
+}
+
+/* 
+
+*/
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 11rem;
+    background-color: var(--button-bg-color);
+    font-size: 1rem;
+    color: var(--text-btn-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+/* 
+
+*/
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background: var(--main-color);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.spy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    direction: ltr;
+    font-size: 4rem;
+    color: var(--text-color);
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h1>img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.spy-center {
+    display: none;
+    margin-top: 8rem;
+
+}
+
+.spy-center>img {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.spy-center.active {
+    display: flex;
+}
+
+
+/*
+
+*/
+
+.spy__start {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+
+/* 
+
+
+*/
+.spy__choose {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+
+
+.spy__choose div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.spy__choose label {
+    width: 6rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.spy__choose select {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: var(--text-color);
+
+}
+
+.spy__choose select option {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+/* 
+
+
+*/
+
+.spy__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+.spy__cards-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 20.5rem;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.card {
+    width: 48%;
+    height: 10rem;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/1.svg), var(--button-bg-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7rem;
+}
+
+
+/* 
+
+
+*/
+
+.spy__time {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.time {
+    direction: ltr;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 10px solid var(--button-bg-color);
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes shadow {
+    0% {
+        /* outline: */
+    }
+
+    100% {}
+}
+
+/* 
+
+
+*/
+
+.swal2-modal .swal2-styled:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.swal2-popup {
+    font-size: 0.75rem !important;
+}
+
+.swal2-actions {
+    flex-wrap: nowrap;
+}
+
+.swal2-styled.swal2-confirm {
+    width: 100%
+}
+
+.swal2-styled.swal2-cancel {
+    width: 50%
+}
+
+.swal2-input {
+    background: #3d444f;
+    width: 15rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.swal2-input:focus {
+    border: none;
+    box-shadow: none
+}
+
+/* 
+
+*/
+
+@media (min-width: 370px) {
+    .card {
+        background-size: 8.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 400px;
+    }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .container {
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 6rem
+    }
+
+    h1>img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .card {
+        width: 32%;
+        background-size: 7.5rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 600px;
+    }
+
+    .card {
+        background-size: 9rem;
+    }
+}
